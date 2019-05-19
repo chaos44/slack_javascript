@@ -1,1 +1,14 @@
-
+<!DOCTYPE html>
+<htmL>
+  <head>
+    <meta charset='utf-8'>
+    <title>Slack</title>
+    <script type='text/javascript' src='slack.js'></script>
+  </head>
+  <body>
+    <span>表示名前 </span><input id='name' type='text'>
+    <span>表示メッセージ </span><textarea id='message' type='text'></textarea>
+    <span>チャンネル名 </span><input id='channel' type='text'>
+    <input type='button' value='slackに送信' onclick='slack_message();'>
+  </body>
+</html>
