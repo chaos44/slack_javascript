@@ -9,7 +9,7 @@ function slack_message() {
   // 表示メッセージを取得
   var message = document.getElementById('message').value;
   // チャンネル名を取得 <link|名前>でリンクを貼ることもできる 例：<http://tokyoghoul.jp/|東京喰種映画サイト>
-  // var channel = document.getElementById('channel').value;
+  var channel = document.getElementById('channel').value;
   // 送信するメッセージの作成
   var payload = JSON.stringify({'text' : message, 'username' : name});
   // var payload = JSON.stringify({'text' : message, 'username' : name, 'channel' : channel});
